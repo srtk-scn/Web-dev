@@ -1,0 +1,17 @@
+
+
+#outer{
+    width: 1000px;
+    background:yellow;
+    margin:0 auto;
+}
+#inner{
+    width: 900px;
+    background:orange;
+    margin:0 auto;
+}
+#{
+    width: 150px;
+    background: purple;
+    margin:0 auto;
+}

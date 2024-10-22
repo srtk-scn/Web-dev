@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SARTHAK</title>
+    <script>
+        var a ={   //this is object a
+            firstName:'Sarthak',
+            lastName:'Sachan',
+            age:22,
+            country:'India',
+            Favmovies:['Sholay','jhole','Poley'],
+            Salary:function(){
+                return 25000;
+            },
+            fullName:function(){
+                return this.firstName+" "+this.lastName//this is used if we return thr value in the same object
+            },
+            living:{
+                City:'Kanpur',
+                Country:'Indiaa'
+            }
+        };
+
+        document.write(a+'<br>');
+        document.write(a.living.City+'<br>');
+        document.write(a['living']['City']+'<br>');
+        document.write(a.fullName()+'<br>');
+        document.write(a.Salary()+'<br>');
+        document.write(a.Favmovies+'<br>');
+        document.write(a.Favmovies[0]+'<br>');
+        document.write(a.country+'<br>');
+        document.write(a.age+'<br>');
+        document.write(a.firstName+'<br>');
+        document.write(a.lastName+'<br>');
+        console.log(a)
+        console.log(a.fullName())
+        console.log(a.Salary())
+        console.log(a.Favmovies)
+        console.log(a.Favmovies[0])
+        console.log(a.firstName)
+        console.log(a.lastName)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

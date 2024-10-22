@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        var a=['sarthak',30,'male','Btech.','karan',12,'male','MBBS'];
+        document.write(a);
+        document.write('<br>');
+        var b=a.slice(1,4);
+        document.write(b);
+        document.write('<br>');
+        var c=a.slice(1);
+        document.write(c);
+        document.write('<br>');
+        var d=a.slice(-1);
+        document.write(d);
+        document.write('<br>');
+        var e=a.slice(-4);// does not make changes on older one new variable creation
+        document.write(e);
+        document.write('<br>');
+        a.splice(2,0,'neha','islam');//splice method changes the parent array
+        document.write(a);
+        document.write('<br>');
+        a.splice(2,2,'salim','istlam');//splice method changes the parent array
+        document.write(a);
+        document.write('<br>');
+        a.splice(2,2);//splice method changes the parent array
+        document.write(a);
+        document.write('<br>');
+        a.slice(-4);
+        document.write(a);
+        document.write('<br>');
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!-- browser object model:- chrome,firefox,Opera,explorer
+innerheight,innerwidth,outerheight,outerwidth -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrowserObjectModel</title>
+</head>
+<body onresize="resize()">
+    <button onclick="openwindow()">Open Window</button>
+    <button onclick="closewindow()">Close Window</button>
+    <button onclick="movewindow()">MoveTo Window</button>
+    <button onclick="movebywindow()">MoveBy Window</button>
+    <button onclick="resizewindow()">Resize Window</button>
+    <button onclick="resizeBywindow()">Resize By Window</button>
+    <script>
+        function resize(){
+            console.clear();
+            var iHeight=window.innerHeight;
+            console.log('inner Height : '+ iHeight);
+            var oHeight=window.outerHeight;
+            console.log('outer Height : '+ oHeight);
+            var iwidth=window.innerWidth;
+            console.log('inner width : '+ iwidth);
+            var owidth=window.outerWidth;
+            console.log('outer width : '+ owidth);
+        }
+        var mywindow;
+        function openwindow(){
+            mywindow=window.open("",'','width=500px,height=200px,left=100px,top=200px')
+            mywindow.document.write('<p>this is my window</p>')
+        }
+        function closewindow(){
+            mywindow.close()
+        }
+        function movewindow(){
+            mywindow.moveTo(200,300)
+            mywindow.focus();
+        }
+        function movebywindow(){
+            mywindow.moveBy(200,300)
+            mywindow.focus();
+        }
+        function resizewindow(){
+            mywindow.resizeTo(50,50)
+            mywindow.focus();
+        }
+        function resizeBywindow(){
+            mywindow.resizeBy(50,50)
+            mywindow.focus();
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+@import "color.css";
+/* @import "printstyle.css" print; */
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font: 18px/24px arial;
+}
+#wrapper{
+    border:1px solid black;
+    width: 1000px;
+    background:white;
+    margin:0 auto;
+}
+#top-bar{
+    background: mediumpurple;
+}
+#top-bar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#top-bar ul li{
+    display: inline-block;
+    margin: 5px;
+}
+#top-bar a{
+    color: #fff;
+    font-size: 20px;
+}
+#top-bar a:hover{
+    color: crimson;
+} 
+#header {
+    height: 100px;
+    font-family: Arial;
+    border-bottom: 1px solid black;
+}
+#header .abc{
+    color: yellow;
+}
+#header h1{
+    padding: 30px 0 0 20px;
+    margin: 0;
+}
+#menu{
+    border-bottom: 1px solid black;
+}
+
+
